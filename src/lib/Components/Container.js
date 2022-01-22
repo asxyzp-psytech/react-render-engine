@@ -13,11 +13,11 @@ const Container = (props) => {
 
     //VARIABLES
     //GETTING PROP VALUES
-    const id = props.id;
-    const template = props.template;
-    const inputStyle = props.inputStyle;
+    const id = props.id;                                                               //CONTAINER ID TO INITIATE RENDERING PROCESS
+    const template = props.template;                                                   //TEMPLATE OBJECT WHICH CONTAINS DATA FOR RENDERING
+    const inputStyle = props.inputStyle;                                               //INPUT STYLE WHICH IS PASSED TO THE CONTAINER ELEMENT
 
-    //GETTING ELEMENT
+    //GETTING ELEMENT DATA
     const element = template.element[id];                                              //ID OF THE CONTAINER ELEMENT
 
     //GETTING ELEMENT STYLES
@@ -38,7 +38,7 @@ const Container = (props) => {
         <div style={styles} className={classes}>
             {
                 children.map(child => {
-                    return <Child id={child.id} template={template} inputStyle={inputStyle} />
+                    return <Child key={child} id={child} template={template} inputStyle={inputStyle} />
                 })
             }
         </div>
@@ -52,8 +52,8 @@ Container.defaultProps = {
 
 //DEFINING PROP TYPES
 Container.propTypes = {
-    id: PropTypes.string,
-    template: PropTypes.object,
+    id: PropTypes.string.isRequired,
+    template: PropTypes.object.isRequired,
     inputStyle: PropTypes.object
 };
 
