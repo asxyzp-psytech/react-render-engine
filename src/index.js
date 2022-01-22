@@ -1,11 +1,11 @@
 //IMPORTING MODULES/PACKAGES
-import Main from './Main';
+import App from './App';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Main />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
