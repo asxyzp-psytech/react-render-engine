@@ -38,8 +38,8 @@ Child.defaultProps = {
 
 //DEFINING PROP TYPES
 Child.propTypes = {
-    id: PropTypes.string,
-    template: PropTypes.object,
+    id: PropTypes.string.isRequired,
+    template: PropTypes.object.isRequired,
     inputStyle: PropTypes.object
 };
 
