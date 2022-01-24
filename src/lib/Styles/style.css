@@ -1,6 +1,7 @@
 /* ROOT VARIABLE(S) */
 :root {
   --card-height: 58vh;
+  --aspect-ratio: 0.75;
 }
 
 /*FLEX CONTAINERS AND PROPERTIES*/
@@ -16,123 +17,147 @@
   flex-grow: 1;
 }
 
+.m-yellow {
+  color: yellow !important;
+}
+
 /* CARD PROPERTIES */
 /* CUSTOM CARD ELEMENT */
 .m-card {
-  height: var(--card-height);
-  width: calc(var(--card-width) * 0.75);
+  height: var(--card-height) !important;
+  width: calc(var(--card-height) * var(--aspect-ratio)) !important;
+}
+
+/* FOR ELEMENTS WITH HEIGHT AND WIDTH EQUAL TO THAT OF THE CARD */
+.m-card-height {
+  height: var(--card-height) !important;
+}
+.m-card-width {
+  width: calc(var(--card-height) * var(--aspect-ratio)) !important;
 }
 
 /* WIDTHS RELATIVE TO .card */
-.card .m-rw-10 {
-  width: 10% !important;
+.m-rw-5 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.05) !important;
 }
-.card .m-rw-15 {
-  width: 15% !important;
+.m-rw-10 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.10) !important;
 }
-.card .m-rw-20 {
-  width: 20% !important;
+.m-rw-15 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.15) !important;
 }
-.card .m-rw-25 {
-  width: 25% !important;
+.m-rw-20 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.20) !important;
 }
-.card .m-rw-30 {
-  width: 30% !important;
+.m-rw-25 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.25) !important;
 }
-.card .m-rw-35 {
-  width: 35% !important;
+.m-rw-30 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.30) !important;
 }
-.card .m-rw-40 {
-  width: 40% !important;
+.m-rw-35 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.35) !important;
 }
-.card .m-rw-45 {
-  width: 45% !important;
+.m-rw-40 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.40) !important;
 }
-.card .m-rw-50 {
-  width: 50% !important;
+.m-rw-45 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.45) !important;
 }
-.card .m-rw-55 {
-  width: 55% !important;
+.m-rw-50 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.50) !important;
 }
-.card .m-rw-60 {
-  width: 60% !important;
+.m-rw-55 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.55) !important;
 }
-.card .m-rw-65 {
-  width: 65% !important;
+.m-rw-60 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.60) !important;
 }
-.card .m-rw-70 {
-  width: 70% !important;
+.m-rw-65 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.65) !important;
 }
-.card .m-rw-75 {
-  width: 75% !important;
+.m-rw-70 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.70) !important;
 }
-.card .m-rw-80 {
-  width: 80% !important;
+.m-rw-75 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.75) !important;
 }
-.card .m-rw-85 {
-  width: 85% !important;
+.m-rw-80 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.80) !important;
 }
-.card .m-rw-90 {
-  width: 90% !important;
+.m-rw-85 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.85) !important;
 }
-.card .m-rw-100 {
-  width: 100% !important;
+.m-rw-90 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.90) !important;
+}
+.m-rw-95 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.95) !important;
+}
+.m-rw-100 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 1.00) !important;
 }
 
 /* HEIGHTS RELATIVE TO .card */
-.card .m-rh-10 {
-  width: 10% !important;
+.m-rh-5 {
+  height: calc(var(--card-height) * 0.05) !important;
 }
-.card .m-rh-15 {
-  width: 15% !important;
+.m-rh-10 {
+  height: calc(var(--card-height) * 0.1) !important;
 }
-.card .m-rh-20 {
-  width: 20% !important;
+.m-rh-15 {
+  height: calc(var(--card-height) * 0.15) !important;
 }
-.card .m-rh-25 {
-  width: 25% !important;
+.m-rh-20 {
+  height: calc(var(--card-height) * 0.2) !important;
 }
-.card .m-rh-30 {
-  width: 30% !important;
+.m-rh-25 {
+  height: calc(var(--card-height) * 0.25) !important;
 }
-.card .m-rh-35 {
-  width: 35% !important;
+.m-rh-30 {
+  height: calc(var(--card-height) * 0.3) !important;
 }
-.card .m-rh-40 {
-  width: 40% !important;
+.m-rh-35 {
+  height: calc(var(--card-height) * 0.35) !important;
 }
-.card .m-rh-45 {
-  width: 45% !important;
+.m-rh-40 {
+  height: calc(var(--card-height) * 0.4) !important;
 }
-.card .m-rh-50 {
-  width: 50% !important;
+.m-rh-45 {
+  height: calc(var(--card-height) * 0.45) !important;
 }
-.card .m-rh-55 {
-  width: 55% !important;
+.m-rh-50 {
+  height: calc(var(--card-height) * 0.5) !important;
 }
-.card .m-rh-60 {
-  width: 60% !important;
+.m-rh-55 {
+  height: calc(var(--card-height) * 0.55) !important;
 }
-.card .m-rh-65 {
-  width: 65% !important;
+.m-rh-60 {
+  height: calc(var(--card-height) * 0.6) !important;
 }
-.card .m-rh-70 {
-  width: 70% !important;
+.m-rh-65 {
+  height: calc(var(--card-height) * 0.65) !important;
 }
-.card .m-rh-75 {
-  width: 75% !important;
+.m-rh-70 {
+  height: calc(var(--card-height) * 0.7) !important;
 }
-.card .m-rh-80 {
-  width: 80% !important;
+.m-rh-75 {
+  height: calc(var(--card-height) * 0.75) !important;
 }
-.card .m-rh-85 {
-  width: 85% !important;
+.m-rh-80 {
+  height: calc(var(--card-height) * 0.8) !important;
 }
-.card .m-rh-90 {
-  width: 90% !important;
+.m-rh-85 {
+  height: calc(var(--card-height) * 0.85) !important;
 }
-.card .m-rh-100 {
-  width: 100% !important;
+.m-rh-90 {
+  height: calc(var(--card-height) * 0.9) !important;
+}
+.m-rh-95 {
+  height: calc(var(--card-height) * 0.95) !important;
+}
+.m-rh-100 {
+  height: calc(var(--card-height) * 1) !important;
 }
 
 /*MISC. PROPERTIES*/
