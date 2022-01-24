@@ -2,6 +2,7 @@
 import React from 'react';
 import Text from './Text';
 import Image from './Image';
+import "../Styles/style.css";
 import PropTypes from 'prop-types';
 import Container from './Container';
 
