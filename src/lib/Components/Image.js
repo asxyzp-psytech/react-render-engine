@@ -1,5 +1,6 @@
 //IMPORTING MODULES/PACKAGES
 import React from 'react';
+import "../Styles/style.css";
 import PropTypes from 'prop-types';
 
 /**
@@ -29,11 +30,27 @@ const Image = (props) => {
     //GETTING ELEMENT PROPERTIES (CLASSES & ATTRIBUTES)
     const properties = element['properties'];                                             //CONTAINS CLASSES AND ATTRIBUTES
     const classes = properties.filter(property => !property.includes("=")).join(' ');     //STORES CLASSES OF CONTAINER ELEMENT: ['a', 'b', 'c=d'] => 'a b'
-    const alt = properties.filter(property => property.includes("alt"))[0].split('=')[1]; //GETTING ALT ATTRIBUTE's VALUE
-    const src = properties.filter(property => property.includes("src"))[0].split('=')[1]; //GETTING SRC ATTRIBUTE's VALUE
+    const alt = properties.filter(property => property.includes("alt")).length===0?'':properties.filter(property => property.includes("alt"))[0].split('=')[1]; //GETTING ALT ATTRIBUTE's VALUE
+    const src = properties.filter(property => property.includes("src")).length===0?'':properties.filter(property => property.includes("src"))[0].split('=')[1]; //GETTING SRC ATTRIBUTE's VALUE
+
+    //METHODS
+    /**
+     * FUNCTION : changeSrc(event)
+     * FUNCTIONALITY : CHANGING IMAGE SOURCE TO DEFAULT IMAGE SOURCE VALUE
+     * @param {*} event : event OBJECT
+     * RETURN : UNDEFINED
+     */
+     const changeSrc =(event) =>{
+        event.target.src="https://i.ibb.co/HBYg58n/psytech-err-img.png";
+    };
 
     return (
-        <img src={src} alt={alt} className={classes} style={styles}/>
+        <img 
+            src={src} 
+            alt={alt} 
+            style={styles}
+            className={classes} 
+            onError={changeSrc}/>
     );
 }
 
