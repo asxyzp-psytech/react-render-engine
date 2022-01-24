@@ -1,100 +1,341 @@
 {
-    "data": [
-        {
-            "template": {
-                "id": "5955d22f-73b7-42c0-806f-b372afb376f6",
-                "topElementId": "59ff5803-0c8f-45b5-a364-5e91bcb10550",
-                "data": {
-                    "data1": "Drinking from the Fetid Well: Data Poisoning and Machine Learning"
-                },
-                "mapping": {
-                    "54d1b394-da78-4a1b-abd1-95a43e404fd9": {
-                        "children": "Drinking from the Fetid Well: Data Poisoning and Machine Learning"
-                    }
-                },
-                "design": {
-                    "3d87f501-3941-474e-8ce2-5489faf99ba2": {
-                        "id": "3d87f501-3941-474e-8ce2-5489faf99ba2",
-                        "color": "#fff",
-                        "background": "#fc6a03",
-                        "height": "fit-content",
-                        "width": "fit-content",
-                        "margin": "5px",
-                        "padding": "5px"
-                    },
-                    "730231ae-0ab5-456e-9e50-70908ca31907": {
-                        "id": "730231ae-0ab5-456e-9e50-70908ca31907",
-                        "color": "rgba(0,0,0,0)",
-                        "background": "rgba(0,0,0,0)",
-                        "height": "rgba(0,0,0,0)",
-                        "width": "fit-content",
-                        "margin": "fit-content",
-                        "padding": "5px"
-                    }
-                },
-                "text": {
-                    "d0f71ec4-095b-485a-b145-ac242defa74b": {
-                        "id": "d0f71ec4-095b-485a-b145-ac242defa74b",
-                        "fontFamily": "'Merriweather', serif",
-                        "fontWeight": "400",
-                        "fontStyle": "normal",
-                        "textAlign": "left",
-                        "textDecoration": "none"
-                    }
-                },
-                "element": {
-                    "4b97df4a-84fc-4046-a517-0a841986e8e4": {
-                        "id": "4b97df4a-84fc-4046-a517-0a841986e8e4",
-                        "parent": "59ff5803-0c8f-45b5-a364-5e91bcb10550",
-                        "type": "container",
-                        "design": "",
-                        "text": "",
-                        "children": [
-                            "54d1b394-da78-4a1b-abd1-95a43e404fd9"
-                        ],
-                        "properties": [
-                            "flex-grow",
-                            "mt-2",
-                            "fw-bolder",
-                            "d-flex",
-                            "flex-column",
-                            "justify-content-center"
-                        ]
-                    },
-                    "59ff5803-0c8f-45b5-a364-5e91bcb10550": {
-                        "id": "59ff5803-0c8f-45b5-a364-5e91bcb10550",
-                        "parent": null,
-                        "type": "container",
-                        "design": "3d87f501-3941-474e-8ce2-5489faf99ba2",
-                        "text": "d0f71ec4-095b-485a-b145-ac242defa74b",
-                        "children": [
-                            "4b97df4a-84fc-4046-a517-0a841986e8e4"
-                        ],
-                        "properties": [
-                            "card",
-                            "d-flex",
-                            "flex-column",
-                            "p-3",
-                            "position-absolute",
-                            "border"
-                        ]
-                    },
-                    "54d1b394-da78-4a1b-abd1-95a43e404fd9": {
-                        "id": "54d1b394-da78-4a1b-abd1-95a43e404fd9",
-                        "parent": "4b97df4a-84fc-4046-a517-0a841986e8e4",
-                        "type": "text",
-                        "design": "",
-                        "text": "",
-                        "children": [
-                            "Drinking from the Fetid Well: Data Poisoning and Machine Learning"
-                        ],
-                        "properties": [
-                            "h1",
-                            "fw-bolder"
-                        ]
-                    }
-                }
-            }
+  "data": [
+    {
+      "template": {
+        "id": "5955d22f-73b7-42c0-806f-b372afb376f6",
+        "topElementId": "59ff5803-0c8f-45b5-a364-5e91bcb10550",
+        "data": {
+          "data1": "Drinking from the Fetid Well: Data Poisoning and Machine Learning"
+        },
+        "mapping": {
+          "54d1b394-da78-4a1b-abd1-95a43e404fd9": {
+            "children": "Drinking from the Fetid Well: Data Poisoning and Machine Learning"
+          }
+        },
+        "design": {
+          "3d87f501-3941-474e-8ce2-5489faf99ba2": {
+            "id": "3d87f501-3941-474e-8ce2-5489faf99ba2",
+            "color": "#fff",
+            "background": "#fc6a03",
+            "height": "fit-content",
+            "width": "fit-content",
+            "margin": "0px",
+            "padding": "5px"
+          },
+          "730231ae-0ab5-456e-9e50-70908ca31907": {
+            "id": "730231ae-0ab5-456e-9e50-70908ca31907",
+            "color": "rgba(0,0,0,0)",
+            "background": "rgba(0,0,0,0)",
+            "height": "rgba(0,0,0,0)",
+            "width": "fit-content",
+            "margin": "fit-content",
+            "padding": "5px"
+          }
+        },
+        "text": {
+          "d0f71ec4-095b-485a-b145-ac242defa74b": {
+            "id": "d0f71ec4-095b-485a-b145-ac242defa74b",
+            "fontFamily": "'Merriweather', serif",
+            "fontWeight": "400",
+            "fontStyle": "normal",
+            "textAlign": "left",
+            "textDecoration": "none"
+          }
+        },
+        "element": {
+          "4b97df4a-84fc-4046-a517-0a841986e8e4": {
+            "id": "4b97df4a-84fc-4046-a517-0a841986e8e4",
+            "parent": "59ff5803-0c8f-45b5-a364-5e91bcb10550",
+            "type": "container",
+            "design": "",
+            "text": "",
+            "children": [
+              "54d1b394-da78-4a1b-abd1-95a43e404fd9"
+            ],
+            "properties": [
+              "m-flex-grow",
+              "mt-2",
+              "fw-bolder",
+              "d-flex",
+              "flex-column",
+              "justify-content-center"
+            ]
+          },
+          "59ff5803-0c8f-45b5-a364-5e91bcb10550": {
+            "id": "59ff5803-0c8f-45b5-a364-5e91bcb10550",
+            "parent": null,
+            "type": "container",
+            "design": "3d87f501-3941-474e-8ce2-5489faf99ba2",
+            "text": "d0f71ec4-095b-485a-b145-ac242defa74b",
+            "children": [
+              "4b97df4a-84fc-4046-a517-0a841986e8e4"
+            ],
+            "properties": [
+              "m-card",
+              "position-absolute",
+              "d-flex",
+              "mx-auto",
+              "flex-column",
+              "p-3",
+              "border"
+            ]
+          },
+          "54d1b394-da78-4a1b-abd1-95a43e404fd9": {
+            "id": "54d1b394-da78-4a1b-abd1-95a43e404fd9",
+            "parent": "4b97df4a-84fc-4046-a517-0a841986e8e4",
+            "type": "text",
+            "design": "",
+            "text": "",
+            "children": [
+              "Drinking from the Fetid Well: Data Poisoning and Machine Learning"
+            ],
+            "properties": [
+              "h1",
+              "fw-bolder"
+            ]
+          }
         }
-    ]
+      }
+    },
+    {
+      "template": {
+        "id": "783de6d6-da90-46fe-b009-8097042290a8",
+        "data": {
+          "data1": "<i class=\"fas fa-bolt text-danger\"></i>&nbsp;News.com.au&nbsp;-&nbsp;Mutter bot",
+          "data2": "J&J Covid booster highly effective against severe Omicron: study",
+          "data3": "<p>A preliminary South African government study published Thursday showed a booster of the Johnson &amp; Johnson Covid vaccine was 85 percent effec...",
+          "data4": "src='undefined'"
+        },
+        "mapping": {
+          "29bd8967-dd34-483c-8354-08416e713e52": {
+            "children": "<i class=\"fas fa-bolt text-danger\"></i>&nbsp;News.com.au&nbsp;-&nbsp;Mutter bot"
+          },
+          "62b4b643-df0a-4eca-bb97-68df2f89fc6d": {
+            "children": "J&J Covid booster highly effective against severe Omicron: study"
+          },
+          "e1fa1b4c-a3f9-44a9-a6df-303eec51444e": {
+            "children": "<p>A preliminary South African government study published Thursday showed a booster of the Johnson &amp; Johnson Covid vaccine was 85 percent effec..."
+          },
+          "81193bf3-f7c3-445e-a631-38d5b12aefbe": {
+            "properties": "src='undefined'"
+          }
+        },
+        "topElementId": "1f4c6bff-d7b3-438f-bf78-48d3ef5b9211",
+        "element": {
+          "67c69899-e4e7-4729-bdff-32c4db0b6a97": {
+            "id": "67c69899-e4e7-4729-bdff-32c4db0b6a97",
+            "parent": "6d07a539-e741-4237-ad57-3b2628ac6d99",
+            "type": "container",
+            "design": "",
+            "text": "",
+            "children": [
+              "62b4b643-df0a-4eca-bb97-68df2f89fc6d",
+              "29bd8967-dd34-483c-8354-08416e713e52",
+              "e1fa1b4c-a3f9-44a9-a6df-303eec51444e"
+            ],
+            "properties": [
+              "m-rw-100",
+              "d-flex",
+              "flex-column",
+              "align-items-center",
+              "justify-content-start",
+              "ps-2",
+              "pe-2",
+              "pt-2",
+              "pb-1"
+            ]
+          },
+          "1f4c6bff-d7b3-438f-bf78-48d3ef5b9211": {
+            "id": "1f4c6bff-d7b3-438f-bf78-48d3ef5b9211",
+            "parent": null,
+            "type": "container",
+            "design": "bd12c6f8-466d-4a67-920d-5792ce2b3344",
+            "text": "6518bb3b-2ee6-4ecb-b95b-0913cbc61b8e",
+            "children": [
+              "6d07a539-e741-4237-ad57-3b2628ac6d99"
+            ],
+            "properties": [
+              "m-card",
+              "d-flex",
+              "position-absolute",
+              "flex-column",
+              "justify-content-between",
+              "border",
+              "mx-auto",
+              "p-0"
+            ]
+          },
+          "cec1629d-3546-4f51-b9cf-2a6546e83030": {
+            "id": "cec1629d-3546-4f51-b9cf-2a6546e83030",
+            "parent": "57d0309d-548a-4edc-88ad-6d3b996b96ab",
+            "type": "text",
+            "design": "",
+            "text": "9c1c472b-2fd4-4a5a-a523-60dc6302f4bb",
+            "children": [
+              "#NEWS"
+            ],
+            "properties": [
+              "position-absolute",
+              "bottom-0",
+              "fw-bold",
+              "p-1",
+              "m-2",
+              "bg-danger",
+              "text-white",
+              "shadow-sm"
+            ]
+          },
+          "6d07a539-e741-4237-ad57-3b2628ac6d99": {
+            "id": "6d07a539-e741-4237-ad57-3b2628ac6d99",
+            "parent": "1f4c6bff-d7b3-438f-bf78-48d3ef5b9211",
+            "type": "container",
+            "design": "",
+            "text": "",
+            "children": [
+              "57d0309d-548a-4edc-88ad-6d3b996b96ab",
+              "67c69899-e4e7-4729-bdff-32c4db0b6a97"
+            ],
+            "properties": [
+              "m-rh-100"
+            ]
+          },
+          "29bd8967-dd34-483c-8354-08416e713e52": {
+            "id": "29bd8967-dd34-483c-8354-08416e713e52",
+            "parent": "67c69899-e4e7-4729-bdff-32c4db0b6a97",
+            "type": "text",
+            "design": "",
+            "text": "c21e11ca-3b3c-4b9f-9308-dc00f5ffaac4",
+            "children": [
+              "<i class='bi bi-lightning-fill text-danger'></i>&nbsp;News.com.au &nbsp; - &nbsp; Mutter Bot"
+            ],
+            "properties": [
+              "text-muted",
+              "w-100",
+              "m-ellipsis"
+            ]
+          },
+          "81193bf3-f7c3-445e-a631-38d5b12aefbe": {
+            "id": "81193bf3-f7c3-445e-a631-38d5b12aefbe",
+            "parent": "57d0309d-548a-4edc-88ad-6d3b996b96ab",
+            "type": "image",
+            "design": "",
+            "text": "",
+            "children": [
+              "1f4c6bff-d7b3-438f-bf78-48d3ef5b9211"
+            ],
+            "properties": [
+              "src='undefined'",
+              "rounded-top",
+              "img-fluid",
+              "w-100",
+              "h-100",
+              "m-object-fit-cover"
+            ]
+          },
+          "62b4b643-df0a-4eca-bb97-68df2f89fc6d": {
+            "id": "62b4b643-df0a-4eca-bb97-68df2f89fc6d",
+            "parent": "67c69899-e4e7-4729-bdff-32c4db0b6a97",
+            "type": "text",
+            "design": "",
+            "text": "27df8f75-c55a-42d7-aa41-dcc3f0f2f1c9",
+            "children": [
+              "J&J Covid booster highly effective against severe Omicron: study"
+            ],
+            "properties": [
+              "w-100"
+            ]
+          },
+          "57d0309d-548a-4edc-88ad-6d3b996b96ab": {
+            "id": "57d0309d-548a-4edc-88ad-6d3b996b96ab",
+            "parent": "1f4c6bff-d7b3-438f-bf78-48d3ef5b9211",
+            "type": "container",
+            "design": "",
+            "text": "",
+            "children": [
+              "cec1629d-3546-4f51-b9cf-2a6546e83030",
+              "81193bf3-f7c3-445e-a631-38d5b12aefbe"
+            ],
+            "properties": [
+              "m-rw-100",
+              "m-rh-45",
+              "position-relative",
+              "overflow-none"
+            ]
+          },
+          "e1fa1b4c-a3f9-44a9-a6df-303eec51444e": {
+            "id": "e1fa1b4c-a3f9-44a9-a6df-303eec51444e",
+            "parent": "67c69899-e4e7-4729-bdff-32c4db0b6a97",
+            "type": "text",
+            "design": "",
+            "text": "c21e11ca-3b3c-4b9f-9308-dc00f5ffaac4",
+            "children": [
+              "<p>A preliminary South African government study published Thursday showed a booster of the Johnson &amp; Johnson Covid vaccine was 85 percent effec..."
+            ],
+            "properties": [
+              "w-100",
+              "mt-1"
+            ]
+          }
+        },
+        "design": {
+          "bd12c6f8-466d-4a67-920d-5792ce2b3344": {
+            "id": "bd12c6f8-466d-4a67-920d-5792ce2b3344",
+            "color": "#000",
+            "backgroundColor": "#FFF",
+            "height": "fit-content",
+            "width": "fit-content",
+            "margin": "0px",
+            "padding": "5px"
+          }
+        },
+        "text": {
+          "9c1c472b-2fd4-4a5a-a523-60dc6302f4bb": {
+            "id": "9c1c472b-2fd4-4a5a-a523-60dc6302f4bb",
+            "fontSize": "13px",
+            "fontFamily": "'Roboto Condensed', sans-serif",
+            "fontWeight": "400",
+            "fontStyle": "normal",
+            "textAlign": "left",
+            "textDecoration": "none"
+          },
+          "6518bb3b-2ee6-4ecb-b95b-0913cbc61b8e": {
+            "id": "6518bb3b-2ee6-4ecb-b95b-0913cbc61b8e",
+            "fontSize": "13px",
+            "fontFamily": "'Zilla Slab', serif",
+            "fontWeight": "400",
+            "fontStyle": "normal",
+            "textAlign": "left",
+            "textDecoration": "none"
+          },
+          "c21e11ca-3b3c-4b9f-9308-dc00f5ffaac4": {
+            "id": "c21e11ca-3b3c-4b9f-9308-dc00f5ffaac4",
+            "fontSize": "14.5px",
+            "fontFamily": "'Zilla Slab', serif",
+            "fontWeight": "400",
+            "fontStyle": "normal",
+            "textAlign": "left",
+            "textDecoration": "none"
+          },
+          "4d5f923b-0c03-4923-a675-59caf8965472": {
+            "id": "4d5f923b-0c03-4923-a675-59caf8965472",
+            "fontSize": "13.3px",
+            "fontFamily": "sans-serif",
+            "fontWeight": "400",
+            "fontStyle": "normal",
+            "textAlign": "left",
+            "textDecoration": "none"
+          },
+          "27df8f75-c55a-42d7-aa41-dcc3f0f2f1c9": {
+            "id": "27df8f75-c55a-42d7-aa41-dcc3f0f2f1c9",
+            "fontSize": "17px",
+            "fontFamily": "'Zilla Slab', serif",
+            "fontWeight": "600",
+            "fontStyle": "normal",
+            "textAlign": "left",
+            "textDecoration": "none"
+          }
+        }
+      }
+    }
+  ]
 }
