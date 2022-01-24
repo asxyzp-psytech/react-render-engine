@@ -1,6 +1,5 @@
 //IMPORTING MODULES/PACKAGES
 import React from 'react';
-import "../Styles/style.css";
 import PropTypes from 'prop-types';
 
 /**
