@@ -1,6 +1,7 @@
 //IMPORTING MODULES/PACKAGES
 import React from 'react';
 import Child from './Child';
+import "../Styles/style.css";
 import PropTypes from 'prop-types';
 
 /**
@@ -25,7 +26,7 @@ const Container = (props) => {
     const designStyleId = element.design;                                              //ID OF DESIGN STYLE ELEMENT
     const textStyle = template.design[textStyleId];                                    //TEXT STYLE OBJECT
     const designStyle = template.design[designStyleId];                                //DESIGN STYLE OBJECT
-    const styles = { ...inputStyle, ...textStyle, ...designStyle };                      //CONTAINER STYLE = (INPUT + TEXT + DESIGN) STYLE OBJECT
+    const styles = { ...inputStyle, ...textStyle, ...designStyle };                    //CONTAINER STYLE = (INPUT + TEXT + DESIGN) STYLE OBJECT
 
     //GETTING ELEMENT PROPERTIES (CLASSES)
     const properties = element['properties'];                                          //CONTAINS CLASSES AND ATTRIBUTES
