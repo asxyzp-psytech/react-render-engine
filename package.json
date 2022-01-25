@@ -4,6 +4,14 @@
   "author": "asxyzp-psytech",
   "version": "0.0.0",
   "private": false,
+  "keywords": ["react","server","rendering"],
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [ "dist", "README.md" ],
+  "repository": {
+      "type": "git",
+      "url": "git+https://github.com/asxyzp-psytech/mutter-render-engine"
+  },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@testing-library/jest-dom": "^5.16.1",
