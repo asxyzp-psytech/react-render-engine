@@ -1,0 +1,187 @@
+/* ROOT VARIABLE(S) */
+:root {
+  --card-height: 58vh;
+  --aspect-ratio: 0.75;
+}
+
+/*FLEX CONTAINERS AND PROPERTIES*/
+/*.m-main : CONTAINER WITH VARIABLE LENGTH TEXT */
+.m-main {
+  flex-grow: 1;
+  font-size: 2em;
+  overflow-x: none;
+  overflow-y: auto;
+}
+/* FLEX PROPERTIES */
+.m-flex-grow {
+  flex-grow: 1;
+}
+
+.m-yellow {
+  color: yellow !important;
+}
+
+/* CARD PROPERTIES */
+/* CUSTOM CARD ELEMENT */
+.m-card {
+  height: var(--card-height) !important;
+  width: calc(var(--card-height) * var(--aspect-ratio)) !important;
+}
+
+/* FOR ELEMENTS WITH HEIGHT AND WIDTH EQUAL TO THAT OF THE CARD */
+.m-card-height {
+  height: var(--card-height) !important;
+}
+.m-card-width {
+  width: calc(var(--card-height) * var(--aspect-ratio)) !important;
+}
+
+/* WIDTHS RELATIVE TO .card */
+.m-rw-5 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.05) !important;
+}
+.m-rw-10 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.10) !important;
+}
+.m-rw-15 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.15) !important;
+}
+.m-rw-20 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.20) !important;
+}
+.m-rw-25 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.25) !important;
+}
+.m-rw-30 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.30) !important;
+}
+.m-rw-35 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.35) !important;
+}
+.m-rw-40 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.40) !important;
+}
+.m-rw-45 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.45) !important;
+}
+.m-rw-50 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.50) !important;
+}
+.m-rw-55 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.55) !important;
+}
+.m-rw-60 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.60) !important;
+}
+.m-rw-65 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.65) !important;
+}
+.m-rw-70 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.70) !important;
+}
+.m-rw-75 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.75) !important;
+}
+.m-rw-80 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.80) !important;
+}
+.m-rw-85 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.85) !important;
+}
+.m-rw-90 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.90) !important;
+}
+.m-rw-95 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 0.95) !important;
+}
+.m-rw-100 {
+  width: calc(var(--card-height) * var(--aspect-ratio) * 1.00) !important;
+}
+
+/* HEIGHTS RELATIVE TO .card */
+.m-rh-5 {
+  height: calc(var(--card-height) * 0.05) !important;
+}
+.m-rh-10 {
+  height: calc(var(--card-height) * 0.1) !important;
+}
+.m-rh-15 {
+  height: calc(var(--card-height) * 0.15) !important;
+}
+.m-rh-20 {
+  height: calc(var(--card-height) * 0.2) !important;
+}
+.m-rh-25 {
+  height: calc(var(--card-height) * 0.25) !important;
+}
+.m-rh-30 {
+  height: calc(var(--card-height) * 0.3) !important;
+}
+.m-rh-35 {
+  height: calc(var(--card-height) * 0.35) !important;
+}
+.m-rh-40 {
+  height: calc(var(--card-height) * 0.4) !important;
+}
+.m-rh-45 {
+  height: calc(var(--card-height) * 0.45) !important;
+}
+.m-rh-50 {
+  height: calc(var(--card-height) * 0.5) !important;
+}
+.m-rh-55 {
+  height: calc(var(--card-height) * 0.55) !important;
+}
+.m-rh-60 {
+  height: calc(var(--card-height) * 0.6) !important;
+}
+.m-rh-65 {
+  height: calc(var(--card-height) * 0.65) !important;
+}
+.m-rh-70 {
+  height: calc(var(--card-height) * 0.7) !important;
+}
+.m-rh-75 {
+  height: calc(var(--card-height) * 0.75) !important;
+}
+.m-rh-80 {
+  height: calc(var(--card-height) * 0.8) !important;
+}
+.m-rh-85 {
+  height: calc(var(--card-height) * 0.85) !important;
+}
+.m-rh-90 {
+  height: calc(var(--card-height) * 0.9) !important;
+}
+.m-rh-95 {
+  height: calc(var(--card-height) * 0.95) !important;
+}
+.m-rh-100 {
+  height: calc(var(--card-height) * 1) !important;
+}
+
+/*MISC. PROPERTIES*/
+/* OBJECT FIT PROPERTIES */
+/*.m-object-fit-cover : OBJECT-FIT PROPERTY FOR CONTAINER WITH IMAGES */
+.m-object-fit-fill {
+  object-fit: fill;
+}
+/*.m-object-fit-cover : OBJECT-FIT PROPERTY FOR CONTAINER WITH IMAGES */
+.m-object-fit-cover {
+  object-fit: cover;
+}
+/*.m-object-fit-contain : OBJECT-FIT PROPERTY FOR CONTAINER WITH IMAGES */
+.m-object-fit-contain {
+  object-fit: contain;
+}
+/*.m-object-fit-scale-down : OBJECT-FIT PROPERTY FOR CONTAINER WITH IMAGES */
+.m-object-fit-scale-down {
+  object-fit: scale-down;
+}
+
+/*.m-ellipsis : SHOWING ELLIPSIS ON TEXT-OVERFLOW */
+.m-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
