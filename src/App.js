@@ -56,7 +56,7 @@ function App(props) {
                         <div className="m-card shadow border text-center d-flex flex-column justify-content-center align-items-center">
                             <i className="d-block h1 bi bi-eye-slash-fill"></i>
                             <h1>Nothing to see here</h1>
-                            <p className="text-secondary">Run <code className="p-1 bg-dark text-light rounded">json-server --watch db.json <br /> -p 8080</code> to load the cards.</p>
+                            <p className="text-secondary">Run <code className="p-1 bg-primary text-light rounded">json-server --watch db.json -p 8080</code> to load the cards.</p>
                         </div> :
                         <>
 
