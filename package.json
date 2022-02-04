@@ -2,7 +2,7 @@
   "name": "@psytech/react-render-engine",
   "description": "It is a server-driven client-side rendering system built with react which allows to render interfaces using templatised input data made up of individual template layout elements & styles received from the server-side.",
   "author": "asxyzp-psytech",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": false,
   "keywords": ["react","server-driven-ui"],
   "main": "dist/index.js",
