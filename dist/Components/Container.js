@@ -59,6 +59,7 @@ const Container = props => {
 
   const children = element.children;
   return /*#__PURE__*/_react.default.createElement("div", {
+    id: id,
     style: styles,
     className: classes
   }, children.map(child => {

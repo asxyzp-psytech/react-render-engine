@@ -72,6 +72,7 @@ const Image = props => {
   };
 
   return /*#__PURE__*/_react.default.createElement("img", {
+    id: id,
     src: src,
     alt: alt,
     style: styles,

@@ -54,6 +54,7 @@ const Text = props => {
 
   const child = element.children.length > 0 ? element.children[0] : '';
   return /*#__PURE__*/_react.default.createElement("div", {
+    id: id,
     style: styles,
     className: classes //SECURITY RISK: NEED TO CHANGE THIS TO INCLUDE ICON ELEMENT
     ,
