@@ -35,7 +35,7 @@ const Container = (props) => {
     const children = element.children;
 
     return (
-        <div style={styles} className={classes}>
+        <div id={id} style={styles} className={classes}>
             {
                 children.map(child => {
                     return <Child key={child} id={child} template={template} inputStyle={inputStyle} />

@@ -28,14 +28,15 @@ const Text = (props) => {
 
     //GETTING ELEMENT PROPERTIES (CLASSES)
     const properties = element['properties'];                                          //CONTAINS CLASSES AND ATTRIBUTES
-    const classes = properties.filter(property => !property.includes("=")).length>0?
-                    properties.filter(property => !property.includes("=")).join(' '):'';  //STORES CLASSES OF CONTAINER ELEMENT: ['a', 'b', 'c=d'] => 'a b'
+    const classes = properties.filter(property => !property.includes("=")).length > 0 ?
+        properties.filter(property => !property.includes("=")).join(' ') : '';  //STORES CLASSES OF CONTAINER ELEMENT: ['a', 'b', 'c=d'] => 'a b'
 
     //GETTING LIST OF CHILDREN OF THE ELEMENT;
-    const child = element.children.length>0?element.children[0]:'';
+    const child = element.children.length > 0 ? element.children[0] : '';
 
     return (
-        <div style={styles}
+        <div id={id}
+            style={styles}
             className={classes}
             //SECURITY RISK: NEED TO CHANGE THIS TO INCLUDE ICON ELEMENT
             dangerouslySetInnerHTML={{ __html: child }}></div>

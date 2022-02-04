@@ -45,6 +45,7 @@ const Image = (props) => {
 
     return (
         <img 
+            id={id}
             src={src} 
             alt={alt} 
             style={styles}
