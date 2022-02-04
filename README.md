@@ -4,8 +4,8 @@
 
 Here's a good explanation of SDUI: https://www.judo.app/blog/server-driven-ui/
 
-This package allows rendering of templates using React with template data received from the server. Here are some of the examples of cards that have been rendered using this package:
-![Card examples](https://i.ibb.co/TTRS0xM/template-example.png)
+This package allows rendering of templates using React with template data received from the server. Here are some of the examples of cards that have been rendered using this package which you can access using this [demo link](https://mutter-render-engine-service.psytech42.repl.co/):
+![Template examples](https://i.ibb.co/TTRS0xM/template-example.png)
 
 ## Example
 To understand how this package works, let's look at this card structure & how it can be rendered using this package:
