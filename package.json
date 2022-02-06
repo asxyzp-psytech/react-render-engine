@@ -10,7 +10,7 @@
   "files": [ "dist", "README.md" ],
   "repository": {
       "type": "git",
-      "url": "git+https://github.com/asxyzp-psytech/mutter-render-engine"
+      "url": "git+https://github.com/asxyzp-psytech/react-render-engine"
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
