@@ -4,7 +4,7 @@
 
 Here's a good explanation of SDUI: https://www.judo.app/blog/server-driven-ui/
 
-This package allows the rendering of templates using React with structured template data received from the server. 
+This package allows the rendering of templates using React with structured template data received from the server.
 
 Here are some of the examples of cards that have been rendered using this package which you can access using this [demo link](https://mutter-render-engine-service.psytech42.repl.co/), while the structured template data for rendering these cards can be accessed using this [link](https://github.com/asxyzp-psytech/react-render-engine/blob/master/db.json):
 ![Template examples](https://i.ibb.co/TTRS0xM/template-example.png)
@@ -68,7 +68,7 @@ The answer lies with the process of automating user interface styles, where any 
 
 ![Combination of design x text styles](https://i.ibb.co/tx5F44g/TEXTx-DESIGN.png)
 
-**Each template element consists of the following the following key-value pairs or properties:**
+#### **Each template element consists of the following the following key-value pairs or properties:**
 
 #### **Structural properties:**
 
@@ -88,7 +88,7 @@ The answer lies with the process of automating user interface styles, where any 
 
    Using this string, the rendering script searches for the text style object present in the post data & once the required text style is found using the provided identification string, then it is added to an object which is assigned to a layout element’s style attributes.
 
-2. `design`: It describes a unique identification string for design style objects that contains non-textual styling properties such as `color`, `margin`, `padding`, `border`, etc. The above process for adding text style objects is also used for adding design style objects to a card’s elements. 
+2. `design`: It describes a unique identification string for design style objects that contains non-textual styling properties such as `color`, `margin`, `padding`, `border`, etc. The above process for adding text style objects is also used for adding design style objects to a card’s elements.
 
 3. `properties`: It is a array of strings that describes the classes &/or the attributes of a layout element. Since both attributes & classes are described in the same way, the rendering script differentiates the class name & the attribute name-value pair is quite simple: the attribute name-value pairs are expressed as a string in the form `attrName=attrValue`, whereas class names are just plain text e.g. `p1`, `h2`.
 
@@ -225,3 +225,16 @@ The above card structure consists of 4 template elements & for simplicity we're 
 	}
 }
 ```
+
+## **Usage**
+
+The components can be imported and used using:
+
+```
+import {Container, Image, Text} from "@psytech/react-render-engine";
+<Container id={id} template={template} inputStyle={inputStyle} />
+<Image id={id} template={template} inputStyle={inputStyle} />
+<Text id={id} template={template} inputStyle={inputStyle} />
+```
+
+Where `id` is the identification string of the template layout element which needs to be rendered, `template` is the structured template data which will be used to render the user interface & `inputStyle` is a style object which will be passed to all the child elements from a given node.
