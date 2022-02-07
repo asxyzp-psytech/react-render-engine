@@ -9,7 +9,16 @@ This package allows the rendering of templates using React with structured templ
 Here are some of the examples of cards that have been rendered using this package which you can access using this [demo link](https://mutter-render-engine-service.psytech42.repl.co/), while the structured template data for rendering these cards can be accessed using this [link](https://github.com/asxyzp-psytech/react-render-engine/blob/master/db.json):
 ![Template examples](https://i.ibb.co/TTRS0xM/template-example.png)
 
-## **Structure**
+## **Table of contents**
+
+  - [Structure](##structure)
+  - [Styles](##styles)
+  - [Example](##example)
+  - [Usage](##usage)
+  - [License](##license)
+  - [Credits](##credits)
+
+## Structure
 
 **Each template consists of the following key-value pairs:**
 
@@ -68,9 +77,9 @@ The answer lies with the process of automating user interface styles, where any 
 
 ![Combination of design x text styles](https://i.ibb.co/tx5F44g/TEXTx-DESIGN.png)
 
-#### **Each template element consists of the following the following key-value pairs or properties:**
+#### Each template element consists of the following the following key-value pairs or properties:
 
-#### **Structural properties:**
+#### Structural properties
 
 1. `id`: It describes a unique identification string to recognise the layout element.
 
@@ -82,7 +91,7 @@ The answer lies with the process of automating user interface styles, where any 
 
 4. `children`: It is a array of strings that describes the unique identification string of the child elements of any given layout element. If it is an empty array, then it means that a layout element has no child elements, or simply, “It is an empty tag”, which is the case with `<img>` tag.
 
-#### **Non-structural properties**:
+#### Non-structural properties:
 
 1. `text`: It describes a unique identification string for the text style objects that contains textual styling properties such as `font-size`, `font-weight`, `font-style`, `text-decoration` etc.
 
@@ -106,7 +115,7 @@ The answer lies with the process of automating user interface styles, where any 
 }
 ```
 
-## **Styles**
+## Styles
 
 **The package also comes with some styles such as:**
 
@@ -114,7 +123,7 @@ The answer lies with the process of automating user interface styles, where any 
 - `m-rh-{5-100}`: Defines relative height with respect to card with +5% increment.
 - `m-rw-{5-100}`: Defines relative width with respect to card with +5% increment.
 
-## **Example**
+## Example
 
 To underst& how this package works, let's look at this card structure & how it can be rendered using this package:
 ![Card DOM structure](https://i.ibb.co/31Z5Rnp/template-breakdown.png)
@@ -226,7 +235,7 @@ The above card structure consists of 4 template elements & for simplicity we're 
 }
 ```
 
-## **Usage**
+## Usage
 
 The components can be imported and used using:
 
@@ -238,3 +247,10 @@ import {Container, Image, Text} from "@psytech/react-render-engine";
 ```
 
 Where `id` is the identification string of the template layout element which needs to be rendered, `template` is the structured template data which will be used to render the user interface & `inputStyle` is a style object which will be passed to all the child elements from a given node.
+
+## License
+MIT
+
+## Credits
+
+Built from 🇮🇳, for the 🌐, by [psytech.ai](https://psytech.ai). For questions or suggestions drop us a mail at asxyzp-@-psytech-dot-ai.
