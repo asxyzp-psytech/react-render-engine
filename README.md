@@ -16,7 +16,7 @@ Here are some of the examples of cards that have been rendered using this packag
   - [Example](##example)
   - [Usage](##usage)
   - [License](##license)
-  - [Credits](##credits)
+  - [Credits](#credits)
 
 ## Structure
 
@@ -253,4 +253,4 @@ MIT
 
 ## Credits
 
-Built from 🇮🇳, for the 🌐, by [psytech.ai](https://psytech.ai). For questions or suggestions drop us a mail at asxyzp-@-psytech-dot-ai.
+The template element structure was inspired by [Notion](https://notion.so)'s [data model](https://www.notion.so/blog/data-model-behind-notion). Built from 🇮🇳, for the 🌐, by [psytech.ai](https://psytech.ai). For questions or suggestions drop us a mail at asxyzp-@-psytech-dot-ai.
